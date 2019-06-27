@@ -1,1 +1,36 @@
 /* this is for you to complete */
+ul ul {
+
+	color: blue;
+
+}
+
+ul ul ul {
+
+	list-style: none;
+
+}
+
+ul li:first-child{
+
+	font-weight: bold;
+
+}
+
+ul li a {
+
+	color: red;
+}
+
+a {
+
+	color: green;
+
+}
+
+div:nth-child(2) p a {
+
+	color: purple;
+	background-color: yellow;
+
+}

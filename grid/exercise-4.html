@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> exercies 4 </title>
+
+	<style type="text/css">
+		
+		#grid-container {
+
+			display: grid;
+
+			grid-template-columns: 1fr 2fr 1fr;
+
+			grid-template-rows: 25% 100px auto;
+
+			background-color: white;
+
+			grid-gap: 10px;
+
+		}
+
+		.header {
+
+			grid-column: 1 / 4;
+
+			background-color: yellow;
+
+		}
+
+		.nav {
+
+			grid-row: 2 / 4;
+
+			background-color: yellow;
+
+		}
+
+		.article {
+
+			grid-row: 2 / 3;
+
+			grid-column: 2 / 3;
+
+			background-color: yellow;
+
+		}
+
+		.ads {
+
+			grid-column: 3 / 4;
+
+			grid-row: 2 / 3;
+
+			background-color: yellow;
+
+		}
+
+		.footer {
+
+			grid-column: 2 / 4;
+
+			grid-row: 3 / 4;
+
+			background-color: yellow;
+
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<div id="grid-container">
+		
+		<div class="header"> Header </div>
+		<div class="nav"> Nav </div>
+		<div class="article"> Article </div>
+		<div class="ads"> Ads </div>
+		<div class="footer"> Footer </div>
+
+
+	</div>
+
+</body>
+</html>

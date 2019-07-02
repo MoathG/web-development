@@ -3,26 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Exercise #6: Simple form</title>
+
+    <style type="text/css">
+
+    </style>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
 <form action="#">
+
+    <div class="col-6"> 
     <div>
         <label for="first_name">First name:</label>
-        <input type="text" name="first_name" id="first_name"/>
+        <input type="text" name="first_name" id="first_name" class="form-control" />
     </div>
+
     <div>
         <label for="last_name">Last name:</label>
-        <input type="text" name="last_name" id="last_name"/>
+        <input type="text" name="last_name" id="last_name" class="form-control" />
     </div>
-    <div>
-        <label><input type="radio" name="gender" value="male"/>male</label>
-        <label><input type="radio" name="gender" value="female"/>female</label>
     </div>
+
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+        <label class="form-check-label" for="inlineRadio1">male</label>
+    </div>
+
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+        <label class="form-check-label" for="inlineRadio2">female</label>
+    </div>
+
+    <div class="col-6">
     <div>
         <label for="birth_date">Date of birth:</label>
-        <input type="date" name="birth_date" id="birth_date"/>
+        <input type="date" name="birth_date" id="birth_date" class="form-control" />
     </div>
-    <input type="submit" value="Add"/>
+    </div>
+
+    <input class="btn btn-primary" type="button" value="Input">
+
 </form>
+
 </body>
 </html>
